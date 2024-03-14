@@ -1,0 +1,59 @@
+.container {
+    background-color: gray;
+    border: 0.1rem solid #999; 
+    border-radius: 0.5rem; 
+    margin: auto;
+    height: 20%;
+    padding: 0.5rem;
+    min-height: 2rem;
+    width: 14%; 
+    min-width: 12rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+}
+
+#calc {
+    padding: 3.3%;
+    margin: auto;
+    display: inline-block;
+}
+
+.display {
+    height: 2rem; /* Increased height for better display */
+    width: 100%; /* Adjusted width to fill the container */
+    text-align: right; /* Aligned text to the right */
+}
+
+.button {
+    display: inline-block;
+    margin: 0.1rem;
+    width: 2rem; 
+    height: 2rem;
+    font-size: 0.9rem; 
+    font-weight: bold;
+}
+
+input[type="text"]{
+    min-width: 5rem;
+    width: 95%;
+}
+
+.clear {
+    background-color: orangered; 
+    border: 0.1rem;
+}
+
+.operator {
+    background-color: lightgray; /* Changed background color for operator buttons */
+    display: inline-block;
+    margin: 0.1rem;
+    width: 2rem; 
+    height: 2rem;
+    font-size: 0.9rem; 
+    font-weight: bold;
+}
