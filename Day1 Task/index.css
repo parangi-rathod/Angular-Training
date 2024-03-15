@@ -24,9 +24,9 @@ header{
 }
 
 .display {
-    height: 2rem; /* Increased height for better display */
-    width: 100%; /* Adjusted width to fill the container */
-    text-align: right; /* Aligned text to the right */
+    height: 2rem; 
+    width: 100%; 
+    text-align: right; 
 }
 
 .button {
@@ -49,7 +49,7 @@ input[type="text"]{
 }
 
 .operator {
-    background-color: lightgray; /* Changed background color for operator buttons */
+    background-color: lightgray; 
     display: inline-block;
     margin: 0.1rem;
     width: 2rem; 

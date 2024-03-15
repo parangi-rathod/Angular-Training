@@ -1,0 +1,139 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.header{
+    margin: auto;
+    width: auto;
+    height: 3rem;
+    padding: 2rem;
+    background-color:bisque;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2rem;
+}
+
+.make-todolist{
+    display: flex;
+    margin: 2rem auto;
+    height: 5rem;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: brown; */
+}
+
+.add-tasks{
+    width: 90%;
+    padding: 0.3rem;
+    height: 50%;
+    min-height: 2rem;
+}
+
+.add-button {
+    border-radius: 4px;
+    background-color: orangered;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin: 1rem;
+    width: 5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.add-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.add-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2rem;
+    transition: 0.5s;
+}
+
+.add-button:hover span {
+    padding-right: 1.5rem;
+}
+
+.add-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.todo-content {
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+}
+
+.completed-task{
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+    padding-top: 10rem;
+}
+
+.completed-task {
+    margin-top: 2rem;
+}
+
+.completed-list li {
+    text-decoration: line-through; 
+    color: gray; 
+}
+
+.completed-list .delete {
+    display: none; /* Hide delete button for completed tasks */
+}
+
+.title {
+    font-size: 1.5rem;
+    border-bottom: 0.1rem black solid; 
+    width: auto; 
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 0;
+}
+
+.todo-list .delete {
+    background-color: #f44336; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-list .delete:hover {
+    background-color: #d32f2f; /* Darker shade of red */
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.footer{
+    position: sticky;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    height: 2rem;
+}
