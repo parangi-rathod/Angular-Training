@@ -88,14 +88,30 @@
     display: flex;
     flex-direction: column; 
     width: 50%;
+    list-style: none; 
+    padding: 0; 
 }
 
 .todo-content input[type="checkbox"] {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    appearance: none; 
+    text-decoration: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%; 
+    border: 1px solid #ccc; 
+    outline: none;
+}
+
+.todo-content input[type="checkbox"]:checked {
+    background-color: orangered; 
 }
 
 .todo-content label {
-    color: orangered; /* Or any other color you prefer for todo text */
+    color: black; 
+    font-size: 1.2rem; 
+    align-items: center;
 }
 
 .completed-task {
@@ -108,6 +124,7 @@
 
 .completed-list li {
     text-decoration: line-through; 
+    font-size: 1.2rem;
     color: gray; 
 }
 
@@ -132,16 +149,22 @@
     padding: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: auto; /* Move delete button to rightmost side */
+    margin-left: auto; 
 }
 
 .todo-list .delete:hover {
-    background-color: #d32f2f; /* Darker shade of red */
+    background-color: #d32f2f; 
 }
 
 ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 footer {

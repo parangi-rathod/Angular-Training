@@ -11,7 +11,7 @@ var createTaskElement = (taskString) => {
 
     label.innerText = taskString;
     checkbox.type = "checkbox";
-    checkbox.classList.add("round-checkbox"); // Add class for styling
+    checkbox.classList.add("round-checkbox"); 
     deleteButton.innerText = "Delete";
     deleteButton.className = "delete";
 
@@ -24,36 +24,38 @@ var createTaskElement = (taskString) => {
 // Function to add a new task
 var addTask = () => {
     console.log("Add Task");
-    var listItem = createTaskElement(taskInput.value);
-    incompleteTask.appendChild(listItem);
-    taskInput.value = "";
+    var taskString = taskInput.value.trim(); 
+    if (taskString !== "") { 
+        var listItem = createTaskElement(taskString);
+        incompleteTask.appendChild(listItem);
+        taskInput.value = "";
 
-    // Add event listener to the newly created checkbox
-    var checkbox = listItem.querySelector("input[type=checkbox]");
-    checkbox.addEventListener("change", () => {
-        if (checkbox.checked) {
-            moveTask(listItem, completedTask);
-        } else {
-            moveTask(listItem, incompleteTask);
-        }
-    });
+        
+        var checkbox = listItem.querySelector("input[type=checkbox]");
+        checkbox.addEventListener("change", () => {
+            if (checkbox.checked) {
+                moveTask(listItem, completedTask);
+            } else {
+                moveTask(listItem, incompleteTask);
+            }
+        });
+    } else {
+        alert("Please enter a task!");
+    }
 };
 
-// Function to delete a task
+
 var deleteTask = (listItem) => {
     console.log("Delete Task");
     listItem.parentNode.removeChild(listItem);
 };
 
-// Function to move a task to a different list
 var moveTask = (taskItem, targetList) => {
     targetList.appendChild(taskItem);
 };
 
-// Event listeners
 addButton.addEventListener("click", addTask);
 
-// Event delegation for delete buttons
 document.addEventListener("click", function (event) {
     if (event.target && event.target.className == "delete") {
         deleteTask(event.target.parentNode);
