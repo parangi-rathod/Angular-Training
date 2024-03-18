@@ -1,0 +1,120 @@
+:root {
+  --button-size: 2.4rem; 
+}
+
+
+.container {
+  background-color: #1B1B1B;
+  border-radius: 0.1rem;
+  margin: auto;
+  padding: 1rem;
+  width: 9%;
+  min-width: 12rem;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.keys {
+  margin: auto;
+  padding: 0.1rem;
+}
+
+header {
+  text-align: center;
+}
+
+.calculator {
+  padding: 0.5rem; /* Adjust padding */
+  min-width: 11rem;
+  width: 20%;
+  margin: auto; /* Center the calculator */
+}
+
+.display {
+  height: 2rem;
+  width: calc(100% - 0.5rem); /* Adjust for padding */
+  text-align: right;
+  margin: auto;
+}
+
+.button, .operator, .clear {
+  display: inline-block;
+  margin: 0.23rem; /* Increase margin between buttons */
+  padding: 0.2rem; /* Adjust padding as needed */
+  width: var(--button-size); /* Use variable for width */
+  height: var(--button-size); /* Use variable for height */
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #565656;
+  color: aliceblue;
+  border: none;
+  border-radius: 0.1rem;
+}
+
+.button:hover{
+  background-color: #565656ac;
+}
+
+.operator{
+  background-color: #1B544A;
+}
+.operator:hover{
+  background-color: #1b54499e;
+}
+
+.clear:hover{
+  background-color: #1cdab7a0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=text] {
+  color: aliceblue;
+  font-size: 1.2rem;
+  min-width: 5rem;
+  width: calc(100% - 0.5rem); /* Adjust for padding */
+  height: 4rem;
+  margin: 0.2rem;
+  border: 0.1rem solid gray;
+  background-color: #1B1B1B;
+}
+
+.clear {
+  background-color: #1CDAB8;
+  border-color: #1CDAB8;
+  color: aliceblue;
+  display: inline-block;
+  margin: 0.3rem; 
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.button[value="0"],
+.button[value="="] {
+  background-color: #1B544A;
+}
+
+
+.button[value="0"]:hover,
+.button[value="="]:hover {
+  background-color: #1B544Aa0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 12rem; 
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}

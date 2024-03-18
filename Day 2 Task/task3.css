@@ -24,7 +24,6 @@
     width: 50%;
     align-items: center;
     justify-content: center;
-    /* background-color: brown; */
 }
 
 .add-tasks{
@@ -121,8 +120,6 @@
 .todo-list .delete:hover {
     background-color: #d32f2f; /* Darker shade of red */
 }
-
-
 
 ul {
     margin: 0;

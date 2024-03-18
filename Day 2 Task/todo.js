@@ -3,7 +3,6 @@ var addButton = document.getElementsByClassName("add-button")[0];
 var incompleteTask = document.querySelector(".todo-list");
 var completedTask = document.querySelector(".completed-list");
 
-// Function to create a new task element
 var createTaskElement = (taskString) => {
     var listItem = document.createElement("li");
     var checkbox = document.createElement("input");
@@ -59,3 +58,26 @@ document.addEventListener("click", function (event) {
         deleteTask(event.target.parentNode);
     }
 });
+
+
+
+console.log(a); 
+var a = 5;
+
+
+function factorial(){
+    (n) => {
+        if(n==0 || n==1) return 1;
+        else return n * factorial(n-1);
+    }
+    return factorial();
+}
+
+const fact = factorial();
+console.log(factorial(7));
+
+
+
+
+
+

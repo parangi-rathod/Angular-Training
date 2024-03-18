@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" /> 
+    <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
 </head>
+
 <body>
     <header>
         <h1>Calculator</h1>
     </header>
     <div class="container">
-        <form name="calc">
-            <div id="calc">
-                <input type="text" class="display" readonly> 
-                <br><br>
-                <input class="button digits" type="button" value="7">
-                <input class="button digits" type="button" value="8"> 
-                <input class="button digits" type="button" value="9"> 
-                <input class="button operator" type="button" value="+"> 
-                <br>
-                <input class="button digits" type="button" value="4">
-                <input class="button digits" type="button" value="5">
-                <input class="button digits" type="button" value="6">
-                <input class="button operator" type="button" value="-">
-                <br>
-                <input class="button digits" type="button" value="1">
-                <input class="button digits" type="button" value="2">
-                <input class="button digits" type="button" value="3">
-                <input class="button operator" type="button" value="X"> 
-                <br>
-                <input class="button clear" type="button" value="C"> 
-                <input class="button digits" type="button" value="0">
-                <input class="button equal" type="button" value="="> 
-                <input class="button operator" type="button" value="/"> 
-                <br>
-            </div>
-        </form>
+        <center>
+            <form name="calc">
+                <div class="calculator">
+                    <input type="text" class="display" readonly>
+                    <div class="keys">
+                        <div class="row">
+                            <input class="button digits" type="button" value="7">
+                            <input class="button digits" type="button" value="8">
+                            <input class="button digits" type="button" value="9">
+                            <input class="button operator" type="button" value="+">
+                        </div>
+                        <div class="row">
+                            <input class="button digits" type="button" value="4">
+                            <input class="button digits" type="button" value="5">
+                            <input class="button digits" type="button" value="6">
+                            <input class="button operator" type="button" value="-">
+                        </div>
+                        <div class="row">
+                            <input class="button digits" type="button" value="1">
+                            <input class="button digits" type="button" value="2">
+                            <input class="button digits" type="button" value="3">
+                            <input class="button operator" type="button" value="X">
+                        </div>
+                        <div class="row">
+                            <input class="button clear" type="button" value="C">
+                            <input class="button digits" type="button" value="0">
+                            <input class="button equal" type="button" value="=">
+                            <input class="button operator" type="button" value="/">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </center>
     </div>
-    <script src="script.js"></script> <!-- Added a script tag for JavaScript file -->
+    <footer>
+        <p>&copy; Copyright Parangi Rathod
+            
+       
+      </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
