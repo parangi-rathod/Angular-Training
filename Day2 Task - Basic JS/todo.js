@@ -11,6 +11,7 @@ var createTaskElement = (taskString) => {
 
     label.innerText = taskString;
     checkbox.type = "checkbox";
+    checkbox.classList.add("round-checkbox"); // Add class for styling
     deleteButton.innerText = "Delete";
     deleteButton.className = "delete";
 
@@ -58,26 +59,3 @@ document.addEventListener("click", function (event) {
         deleteTask(event.target.parentNode);
     }
 });
-
-
-
-console.log(a); 
-var a = 5;
-
-
-function factorial(){
-    (n) => {
-        if(n==0 || n==1) return 1;
-        else return n * factorial(n-1);
-    }
-    return factorial();
-}
-
-const fact = factorial();
-console.log(factorial(7));
-
-
-
-
-
-
