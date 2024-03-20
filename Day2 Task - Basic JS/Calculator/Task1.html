@@ -10,20 +10,31 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <h1>Calculator</h1>
     </header>
+    <br>
+    <br>
+
+    <!-- Container -->
     <div class="container">
         <center>
             <form name="calc">
                 <div class="calculator">
-                    <input type="text" class="display" readonly><br><br>
+                    <input type="text" class="display" readonly placeholder="0"><br><br>
                     <div class="keys">
+                        <div class="row">
+                            <input class="button digits" type="button" value="AC">
+                            <input class="button digits" type="button" value="DEL">
+                            <input class="button digits" type="button" value="%">
+                            <input class="button operator" type="button" value="/">
+                        </div>
                         <div class="row">
                             <input class="button digits" type="button" value="7">
                             <input class="button digits" type="button" value="8">
                             <input class="button digits" type="button" value="9">
-                            <input class="button operator" type="button" value="+">
+                            <input class="button operator" type="button" value="X">
                         </div>
                         <div class="row">
                             <input class="button digits" type="button" value="4">
@@ -35,22 +46,23 @@
                             <input class="button digits" type="button" value="1">
                             <input class="button digits" type="button" value="2">
                             <input class="button digits" type="button" value="3">
-                            <input class="button operator" type="button" value="X">
+                            <input class="button operator" type="button" value="+">
                         </div>
                         <div class="row">
-                            <input class="button clear" type="button" value="C">
-                            <input class="button digits" type="button" value="0">
+                            <input class="button clear" type="button" value="0">
+                            <input class="button digits" type="button" value=".">
                             <input class="button equal" type="button" value="=">
-                            <input class="button operator" type="button" value="/">
                         </div>
                     </div>
                 </div>
             </form>
         </center>
     </div>
+    
+    <!-- Footer -->
     <footer>
         <p>&copy; Copyright Parangi Rathod
-    </footer>
+        </footer>
     <script src="Task1.js"></script>
 </body>
 

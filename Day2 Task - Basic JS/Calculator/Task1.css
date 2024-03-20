@@ -2,6 +2,11 @@
   --button-size: 2.4rem; 
 }
 
+*{ 
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+}
 
 .container {
   background-color: #1B1B1B;
@@ -9,8 +14,8 @@
   margin: auto;
   padding: 1rem;
   width: 9%;
-  min-width: 12rem;
-  height: 18rem;
+  min-width: 13rem;
+  height: 23rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,25 +32,25 @@ header {
 }
 
 .calculator {
-  padding: 0.5rem; /* Adjust padding */
-  min-width: 11rem;
+  padding: 0.5rem; 
+  min-width: 12.5rem;
   width: 20%;
-  margin: auto; /* Center the calculator */
+  margin: auto; 
 }
 
 .display {
   height: 2rem;
-  width: calc(100% - 0.5rem); /* Adjust for padding */
+  width: calc(100% - 0.5rem); 
   text-align: right;
   margin: auto;
 }
 
 .button, .operator, .clear {
   display: inline-block;
-  margin: 0.23rem; /* Increase margin between buttons */
-  padding: 0.2rem; /* Adjust padding as needed */
-  width: var(--button-size); /* Use variable for width */
-  height: var(--button-size); /* Use variable for height */
+  margin: 0.25rem; 
+  padding: 0.25rem; 
+  width: var(--button-size);
+  height: var(--button-size); 
   font-size: 0.9rem;
   font-weight: 600;
   background-color: #565656;
@@ -79,37 +84,35 @@ input[type=text] {
   color: aliceblue;
   font-size: 1.2rem;
   min-width: 5rem;
-  width: calc(100% - 0.5rem); /* Adjust for padding */
+  width: calc(100% - 0.5rem); 
   height: 4rem;
   margin: 0.2rem;
   border: 0.1rem solid gray;
   background-color: #1B1B1B;
 }
 
-.clear {
-  background-color: #1CDAB8;
-  border-color: #1CDAB8;
-  color: aliceblue;
-  display: inline-block;
-  margin: 0.3rem; 
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
 .button[value="0"],
-.button[value="="] {
+.button[value="."] {
   background-color: #1B544A;
 }
 
+.button[value="="]{
+  background-color: #1CDAB8;
+  width: 4.8rem;
+}
+
+.button[value="="]:hover{
+  background-color: #1cdab7a7;
+}
 
 .button[value="0"]:hover,
-.button[value="="]:hover {
+.button[value="."]:hover {
   background-color: #1B544Aa0;
 }
 
 footer {
   text-align: center;
-  margin-top: 12rem; 
+  margin-top: 9.5rem; 
   padding: 1rem;
   background-color: #333;
   color: white;

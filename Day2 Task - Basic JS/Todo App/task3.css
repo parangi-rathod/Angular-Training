@@ -2,7 +2,7 @@
     margin: auto;
     padding: auto;
     box-sizing: border-box;
-    font-family: poppins;
+    font-family: "poppins sans-serif";
 }
 
 .gradientBg {
@@ -94,7 +94,8 @@
 
 .todo-content input[type="checkbox"] {
     margin-right: 1rem;
-    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
     appearance: none; 
     text-decoration: none;
     width: 1.2rem;
@@ -123,13 +124,25 @@
 }
 
 .completed-list li {
-    text-decoration: line-through; 
+    text-decoration: line-through;
+    text-align: center; 
+    height: 2rem;
     font-size: 1.2rem;
     color: gray; 
 }
 
+.todo-list li{
+    margin-top: 1rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    
+}
+
 .completed-list .delete {
     display: none; 
+    position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .title {
@@ -148,6 +161,9 @@
     border-radius: 4px;
     padding: 0.5rem;
     cursor: pointer;
+    position: absolute;
+    right: 30rem;
+    align-items: center;
     transition: background-color 0.3s ease;
     margin-left: auto; 
 }
