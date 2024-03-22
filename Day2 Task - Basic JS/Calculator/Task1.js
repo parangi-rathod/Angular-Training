@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
           currentInput = num1 / num2;
           break;
           case "%":
-            currentInput = num1 % num2;
+            currentInput = num1 * num2 * 0.01;
             break;
         default:
           break;
