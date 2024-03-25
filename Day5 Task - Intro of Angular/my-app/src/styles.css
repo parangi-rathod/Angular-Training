@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../src/assets/CoverPage.png");
+  background-color: #0c162c;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1, h2, h3, h4, h5, h6, input, placeholder, p, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+    min-height: 20vh;
+    height: 30vh;
+  }
+}
