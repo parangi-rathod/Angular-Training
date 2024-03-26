@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-darkblue mb-20 py-4">
+        <div class="container mx-auto lg:text-base text-sm text-center text-white">
+            <p>Calculator</p>
+        </div>
+    </header>
+
+    <!-- Calculator -->
+    <div  class="flex flex-col lg:max-w-[15rem] max-w-[10rem] mt-16 border p-2 rounded-xl border-gray mx-auto font-poppins">
+        <textarea class="display border bg-lightGray rounded-md border-lightGray p-2 w-full text-right resize-none"
+            readonly></textarea>
+        <table class="w-full">
+            <tr>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 text-white lg:text-base text-xs font-semibold bg-darkblue hover:scale-110 duration-300">AC</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 text-white lg:text-base text-xs font-semibold bg-darkblue hover:scale-110 duration-300">DEL</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 text-white lg:text-base text-xs font-semibold bg-darkblue hover:scale-110 duration-300">%</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-skyblue text-white lg:text-base text-xs font-semibold hover:scale-110 duration-300">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">7</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">8</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">9</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-skyblue text-white lg:text-base text-sm font-semibold hover:scale-110 duration-300">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">4</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">5</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">6</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-skyblue text-white lg:text-base text-sm font-semibold  hover:scale-110 duration-300">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">1</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">2</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">3</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-skyblue  hover:scallg:e-110 dur text-smation-300 text-white text-base font-semibold">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">0</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-gray font-semibold lg:text-base text-sm hover:scale-110 duration-300">.</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-skyblue text-white lg:text-base text-sm font-semibold hover:scale-110 duration-300">+/-</button>
+                </td>
+                <td class="lg:p-2 p-1"><button
+                        class="btn lg:w-10 w-5 rounded-lg lg:h-10 h-5 bg-skyblue text-white lg:text-base text-sm font-semibold hover:scale-110 duration-300">=</button>
+                </td>
+            </tr>
+        </table>
+        <button
+            class="btn-history lg:h-10 h-5 rounded-lg lg:w-[12rem] w-[6rem] mx-auto bg-gray font-semibold lg:text-base text-sm hover:scale-103 duration-300">History</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-darkblue mt-20 py-4">
+        <div class="container mx-auto lg:text-base text-sm text-center text-white">
+            <p>Calculator by &copy; Parangi Rathod </p>
+        </div>
+    </footer>
+    
+</body>
+<script src="calculator.js">
+</script>
+
+</html>
